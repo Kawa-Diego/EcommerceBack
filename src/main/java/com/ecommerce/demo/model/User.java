@@ -1,10 +1,6 @@
 package com.ecommerce.demo.model;
 
-import jakarta.persistence.Table;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.NoArgsConstructor;
@@ -13,7 +9,7 @@ import lombok.AllArgsConstructor;
 import java.util.UUID;
 
 
-@Table(name = "\"user\"")
+@Table(name = "users")
 @Entity
 @Getter
 @Setter
@@ -21,12 +17,11 @@ import java.util.UUID;
 @AllArgsConstructor
 public class User {
     @Id
-    @GeneratedValue
-    private UUID uuid;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
 
     private String name;
     private String email;
     private String password;
-    private String cpf;
 
 }
