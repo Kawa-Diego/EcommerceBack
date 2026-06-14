@@ -24,6 +24,8 @@ target/
 *.war
 
 com/ecommerce/demo/resources/application-prod.proprieties
+com/ecommerce/demo/resources/application-dev.proprieties
+.env
 
 ### NetBeans ###
 /nbproject/private/
