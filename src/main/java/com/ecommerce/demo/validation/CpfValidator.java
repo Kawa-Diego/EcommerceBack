@@ -7,8 +7,8 @@ public final class CpfValidator {
     private CpfValidator() {
     }
 
-    public static boolean isValid(String cpf, String cnpj) {
-        if (cpf == null || cnpj == null) {
+    public static boolean isValid(String cpf) {
+        if (cpf == null) {
             return false;
         }
 
