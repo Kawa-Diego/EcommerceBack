@@ -1,6 +1,5 @@
 package com.ecommerce.demo.security;
 
-import com.ecommerce.demo.model.User;
 import com.ecommerce.demo.repository.UserRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
